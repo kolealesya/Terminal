@@ -1,0 +1,81 @@
+1. Задания
+
+1) Посмотреть где я 
+pwd
+
+2) Создать папку
+mkdir qa
+
+3) Зайти в папку
+cd qa
+
+4) Создать 3 папки
+mkdir qa1 qa2 qa3
+
+5) Зайти в любую папку
+cd qa1
+
+6) Создать 5 файлов (3 txt, 2 json)
+touch qa.txt qq.txt aa.txt qa.json qq.json
+
+7) Создать три папки
+mkdir test1 test2 test3 
+
+8) Вывести список содержимого папки
+ls -la
+
+9) Открыть любой txt файл
+cat qa.txt
+
+10) Написать любой текст в этот файл
+cat >> qa.txt
+
+11) Сохранить текст и выйти
+ctrl+c
+
+12) Выйти из папки на уровень выше
+cd ..
+
+13) переместить 2 файла в другую папку
+mv qa1/{aa.txt,qq.json} qa2
+
+14) Скопировать 2 файла в другую папку
+cp qa1/{qa.json,qa.txt} qa3
+
+15) Найти файл по имени
+find -iname "qa.txt"
+
+16) Посмотреть содержимое в реальном времени
+tail qa1/qa.txt
+
+17) Вывести несколько первых строк из текстового файла
+head -2 qa1/qa.txt
+
+18) Вывести несколько последних строк из текстового файла
+tail -5 qa1/qa.txt
+
+19) Посмотреть содержимое длинного файла 
+less qa1/qa.txt
+
+20) Вывести дату и время
+date
+ 
+2. Отправить http запрос на сервер
+http://162.55.220.72:5005/get_method?name=Alesya&age=23
+[
+  "Alesya", 
+  "23"
+]
+
+3. Скрипт.
+
+#!/bin/bash
+mkdir test
+cd test
+mkdir qa1 qa2 qa3
+cd qa1
+touch qa.txt qq.txt testing.txt qa.json qq.json
+mkdir qqq aaa qqaa
+ls -la
+cd ..
+mv qa1/{qa.txt,qa.json} qa2
